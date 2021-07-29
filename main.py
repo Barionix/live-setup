@@ -17,9 +17,10 @@ def install_dev_tools():
     print("[Installing git...]")
     os.system("sudo apt-get install -y git")
     print("[Installing VSCode...]")
-    os.system("sudo snap install --classic code"    
+    os.system("sudo snap install --classic code")    
+
 def start():
+    install_dev_tools()
     set_folders()
-    #install_dev_tools()
 
 start()
