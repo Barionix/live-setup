@@ -8,7 +8,9 @@ def clone_repos():
 
 def set_folders():
     print("[Setting folders...]")
-    os.system("cd; mkdir Office")
+    os.mkdir("Office")
+    os.mkdir("Office/Projects") 
+    os.chdir("Office/Projects")
     clone_repos()
 
 def install_dev_tools():
@@ -18,6 +20,6 @@ def install_dev_tools():
     os.system("sudo snap install --classic code"    
 def start():
     set_folders()
-    install_dev_tools()
+    #install_dev_tools()
 
 start()
