@@ -16,6 +16,8 @@ def set_folders():
 def install_dev_tools():
     print("[Installing git...]")
     os.system("sudo apt-get install -y git")
+    print("[Installing Go...]")
+    os.system("sudo snap install --classic go")
     print("[Installing VSCode...]")
     os.system("sudo snap install --classic code")    
 
