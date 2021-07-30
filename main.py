@@ -14,6 +14,11 @@ def set_folders():
     os.chdir("Office/Projects")
     clone_repos()
 
+def set_up_compose():
+    print("[Installing compose...]")
+
+def set_up_docker():
+    print("[Installing docker...")
 def install_dev_tools():
     print("[Installing git...]")
     os.system("sudo apt-get install -y git")
