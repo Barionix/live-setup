@@ -5,6 +5,7 @@ def clone_repos():
     os.system("git clone https://github.com/Barionix/Trovilo")
     os.system("git clone https://github.com/Barionix/gogram")
     os.system("git clone https://github.com/Barionix/live-setup")
+    os.system("git clone https://github.com/Barionix/WildNetwork")
 
 def set_folders():
     print("[Setting folders...]")
