@@ -5,7 +5,6 @@ def clone_repos():
     os.system("git clone https://github.com/Barionix/Trovilo")
     os.system("git clone https://github.com/Barionix/gogram")
     os.system("git clone https://github.com/Barionix/live-setup")
-    os.system("git clone https://github.com/Barionix/worgout")
 
 def set_folders():
     print("[Setting folders...]")
@@ -16,7 +15,9 @@ def set_folders():
 
 def set_up_compose():
     print("[Installing compose...]")
-
+    os.system("sudo curl -L \"https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)\" -o /usr/local/bin/docker-compose")
+    os.system("sudo chmod +x /usr/local/bin/docker-compose")
+    
 def set_up_docker():
     print("[Installing docker...")
 def install_dev_tools():
