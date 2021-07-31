@@ -32,6 +32,8 @@ def set_up_docker():
   \"deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable\" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null")
     os.system("sudo apt-get update -y && sudo apt-get install -y docker-ce docker-ce-cli containerd.io")
+    os.system("echo '{ \"storage-driver\": \"devicemapper\" }' | sudo tee -a /etc/docker/daemon.json > /dev/null")
+
 def install_dev_tools():
     print("[Installing git...]")
     os.system("sudo apt-get install -y git")
