@@ -6,6 +6,7 @@ def clone_repos():
     os.system("git clone https://github.com/Barionix/gogram")
     os.system("git clone https://github.com/Barionix/live-setup")
     os.system("git clone https://github.com/Barionix/WildNetwork")
+    os.system("git --config user.email \"mariojuniorsoaresdev@gmail.com\"")
 
 def set_folders():
     print("[Setting folders...]")
@@ -40,7 +41,9 @@ def install_dev_tools():
     print("[Installing Go...]")
     os.system("sudo snap install --classic go")
     print("[Installing VSCode...]")
-    os.system("sudo snap install --classic code")    
+    os.system("sudo snap install --classic code")  
+    print("[Installing Insomnia...]")
+    os.system("sudo snap install --classic insomnia")    
 
 def start():
     install_dev_tools()
