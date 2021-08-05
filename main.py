@@ -45,6 +45,4 @@ def install_dev_tools():
 def start():
     install_dev_tools()
     set_folders()
-    set_up_docker()
-    set_up_compose()
 start()
