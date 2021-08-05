@@ -6,7 +6,7 @@ def clone_repos():
     os.system("git clone https://github.com/Barionix/gogram")
     os.system("git clone https://github.com/Barionix/live-setup")
     os.system("git clone https://github.com/Barionix/WildNetwork")
-    os.system("git --config user.email \"mariojuniorsoaresdev@gmail.com\"")
+    os.system("git config --global user.email \"mariojuniorsoaresdev@gmail.com\"")
 
 def set_folders():
     print("[Setting folders...]")
